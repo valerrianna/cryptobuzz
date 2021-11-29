@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Buzz</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+  <div class="wrapper">
+    <header>
+      <img src="/public/assets/crypto.png" alt="search engine optimization" class="float-left" />
+        {{!-- <h1 class="has-text-black px-3 py-3 has-text-weight-bold">Tech Buzzing</h1> --}}
+        <nav class="navbar mt-2">
+            {{#if loggedIn}}
+             <input type="text" placeholder="Search for Crypto...">
+            <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
+            <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
+            <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Create post</a>
+            <button id="logout" class="button is-danger">Logout</button>
+            {{else}}
+            <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
+            <a href="/login" class="button is-primary">Login</a>
+            {{/if}}
+        </nav>
+    </header>
+
+    {{#if loggedIn}}
+    <main>
+            {{{ body }}}
+    </main>
+    {{else}}
+
+    {{/if}}
+
+    <footer class="footer rows pb-2">
+        <div class="row-is-full content has-text-centered">
+            <p>
+            <a href="/">Home</a>{{#if loggedIn}} | 
+            <a href="/dashboard/">dashboard</a> | 
+            <a href="/dashboard/create/">Create a new post</a>
+            {{else}}
+             | <a href="/login/">login</a>
+            {{/if}}
+            </p>
+        </div>
+      <div class="row-is-full content has-text-centered">
+    <p>
+      <strong>Tech Buzzing</strong> by <a href="https://github.com/valerrianna/cryptobuzz.git">Randolph Richard , Valerie Nguyen, Skyler Alexander</a> | made with <a href="https://bulma.io/">bulma</a> | source code:
+      <a href="https://github.com/RandolphRichard/MVC-Techs-Blog.git"><i class="fab fa-github"></i></a> |  
+       {{!-- <a href="mailto:randolphrichard9@gmail.com"><i class="far fa-envelope"></i></a> --}}
+    </p>
+  </div>
+    </footer>
+  </div>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+</body>
+
+</html>
