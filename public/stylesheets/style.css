@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(4, 50, 253);
+    background-image: url('/public/assets/back.jpg');
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+  }
+
+  .has-text-black {
+    color: #8d540c!important;
+}
+
+.has-background-grey-lighter {
+  background-color: #7e595978!important;
+}
+
+.navbar {
+  background-color: #ebe6e600;
+  min-height: 3.25
+rem
+;
+  position: relative;
+  z-index: 30;
+}
+
+.card-content {
+  background-color: #00ffe724;
+  padding: 1.5
+rem
+;
+}
+
+.button.is-danger {
+    background-color: #ff7500;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-primary {
+  background-color: #038707;
+  border-color: transparent;
+  color: #fff;
+}
+  
+footer {
+  border-top: 1
+px
+solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+  
+  a:hover {
+    color: #f06c15;
+  }
+  
+  button {
+    border: 0;
+    padding: 1%;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .post-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  textarea, input {
+    padding: .5%;
+    border-radius: 15px;
+    border: 1px solid rgb(148, 146, 146);
+  }
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #34ebd3;
+  }
+  
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+  
+  form > div {
+    margin-bottom: 3%;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2% 4%;
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
+  
+  .btn-no-style:hover {
+    background: none;
+    color: #3486eb;
+  }
+  
+  .delete-post-btn {
+    background-color: #d41414;
+  }
+  
+  .delete-post-btn:hover {
+    background-color: #ff643d;
+  }
+  
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+  }
+  
+  .post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+  }
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
+  
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .comment:nth-child(odd) {
+    background-color: #fff5eb;
+  }
+  
+  .comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+  }
+  
+  .edit-post-form {
+    margin-bottom: 5%;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }
+
+  .card {
+      margin-bottom: 1em;
+      margin-top: 1em;
+  }
+
+  .rows{
+      display:flex;
+      flex-direction: column;
+  }
