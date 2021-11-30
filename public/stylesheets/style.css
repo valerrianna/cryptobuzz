@@ -30,6 +30,14 @@ rem
   position: relative;
   z-index: 30;
 }
+.navbar-item, .navbar-link {
+  margin-top: 10px;
+  color: #4dacad;
+  display: block;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
 
 .card-content {
   background-color: #00ffe724;
