@@ -5,7 +5,7 @@ const requestOptions = {
   qs: {
     'start': '1',
     'limit': '1',
-    'convert': 'CAD'
+    'sort': 'name'
   },
   headers: {
     'X-CMC_PRO_API_KEY': '9256192e-5bec-495f-ac90-d237f0a1f879'
