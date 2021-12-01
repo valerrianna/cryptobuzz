@@ -2,7 +2,7 @@
   "name": "cryptobuzz",
   "version": "1.0.0",
   "description": "",
-  "main": "dummydata.js",
+  "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bulma": "^0.9.3",
@@ -11,9 +11,11 @@
     "express": "^4.17.1",
     "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
+    "install": "^0.13.0",
     "mysql2": "^2.3.3",
     "node": "^17.1.0",
     "nodemon": "^2.0.15",
+    "npm": "^8.1.4",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "sequelize": "^6.12.0-alpha.1"
