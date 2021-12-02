@@ -19,7 +19,8 @@ body, html {
 }
 
 .has-background-grey-lighter {
-background-color: #7e595978!important;
+background-color: #4dacad66!important;
+border-radius: 5px 50px 30px;
 }
 
 .navbar {
@@ -52,6 +53,7 @@ background-color: #00ffe724;
 padding: 1.5
 rem
 ;
+border-radius: 5px 50px 30px;
 }
 
 .button.is-danger {
@@ -98,6 +100,19 @@ button {
   margin: 0;
   padding: 0;
 }
+
+/* Create post Blog */
+.textarea:not([rows]) {
+  max-height: 40em;
+  min-height: 8em;
+  border-radius: 5px 50px 30px;
+}
+
+
+element.style {
+  border-radius: 5px 50px 30px;
+}
+/* end Create post Blog */
 
 textarea, input {
   padding: .5%;
@@ -197,7 +212,8 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #fffa94b0;
+  border-radius: 5px 50px 30px;
 }
 
 .comment .meta {
@@ -221,9 +237,12 @@ footer {
 .card {
     margin-bottom: 1em;
     margin-top: 1em;
+    border-radius: 5px 50px 30px;
+        background-color: #fff;
 }
 
 .rows{
     display:flex;
     flex-direction: column;
+    border-radius: 5px 50px 30px;
 }

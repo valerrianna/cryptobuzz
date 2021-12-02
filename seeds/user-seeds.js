@@ -20,9 +20,9 @@ const userData = [
         password: "p@ssword3"
     },
     {
-        username: "Bob_Marley",
-        twitter: "BobMarley",
-        email: "BobMarley@gmail.com",
+        username: "Marie_Kaze",
+        twitter: "Mkaze",
+        email: "mkaze@gmail.com",
         password: "p@ssword4"
     },
     {
