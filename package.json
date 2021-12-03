@@ -24,7 +24,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "jest",
-    "start": "node server.js",
+    "start": "npm run seeds && npm run run",
+    "run" : "node server.js",
     "watch": "nodemon server.js",
     "seeds": "node seeds/index.js"
   },
