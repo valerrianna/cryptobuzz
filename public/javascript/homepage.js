@@ -14,8 +14,12 @@ const requestOptions = {
   gzip: true
 };
 
+
+
 rp(requestOptions).then(response => {
-  console.log('API call response:', response);
+  console.log(response);
+  res.render('homepage',{ response });
+ // console.log('API call response:', response);
 }).catch((err) => {
   console.log('API call error:', err.message);
 });
