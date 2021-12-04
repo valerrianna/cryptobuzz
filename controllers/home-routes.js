@@ -46,7 +46,7 @@ router.get("/", (req, res) => {
       axios({
         method: "get",
         // url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BTC,ETH&convert=CAD",
-        url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=5",
+        url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=8",
         
         responseType: "json",
         headers: {
@@ -65,7 +65,14 @@ router.get("/", (req, res) => {
             return{
               name:quote.name,
               symbol:quote.symbol,
-              price:quote.quote.USD.price.toFixed(2)
+              price:quote.quote.USD.price.toFixed(2),
+              market:quote.quote.USD.market_cap.toFixed(2),
+              updateh:quote.quote.USD.percent_change_1h.toFixed(2),
+              updatehh:quote.quote.USD.percent_change_24h.toFixed(2),
+              updated:quote.quote.USD.percent_change_7d.toFixed(2),
+              updatedd:quote.quote.USD.percent_change_30d.toFixed(2),
+              updateddd:quote.quote.USD.percent_change_60d.toFixed(2),
+              updatedddd:quote.quote.USD.percent_change_90d.toFixed(2)
             }
           })
           console.log(quotes)

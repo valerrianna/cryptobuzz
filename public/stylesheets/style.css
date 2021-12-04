@@ -80,7 +80,7 @@ font-size: 110%;
 a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #4dacad;;
 }
 
 a:hover {
@@ -245,4 +245,10 @@ footer {
     display:flex;
     flex-direction: column;
     border-radius: 5px 50px 30px;
+}
+
+#maintitle{
+
+  color: #f5eb21;
+  font-weight: bold;
 }
