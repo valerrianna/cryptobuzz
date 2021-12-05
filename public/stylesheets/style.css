@@ -251,4 +251,29 @@ footer {
 
   color: #f5eb21;
   font-weight: bold;
+  background-color: #1a1f1e5e;
+  height: 45px;
 }
+
+img.image{
+  display: none;
+}
+
+@media screen and (max-width: 1036px){
+#shrink{
+  display: none;
+}
+}
+
+@media screen and (max-width: 768px){
+  #shrinkk{
+    display: none;  
+    }
+  }
+
+  @media screen and (max-width: 767px){
+
+    img.image{
+      display: block;
+    }
+  }
