@@ -15,7 +15,7 @@
       <a href="/"><img src="/assets/crypto.png" width="250px" alt="search engine optimization" class="float-left" /></a>
         <nav class="navbar mt-2">
             {{#if loggedIn}}
-             <input type="text" placeholder="Search for Crypto...">
+             <input type="text" id="search" placeholder="Search for Crypto...">
             <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
             <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
             <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Create post</a>
@@ -54,6 +54,7 @@
 
 {{#if loggedIn}}
 <script src="/javascript/logout.js"></script>
+<script src = "/javascript/searchbar.js"></script>
 {{/if}}
 </body>
 
