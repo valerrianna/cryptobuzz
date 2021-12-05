@@ -8,7 +8,7 @@ router.get("/:query", (req, res) => {
         axios({
           method: "get",
           // url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BTC,ETH&convert=CAD",
-          url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=500",
+          url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=5000",
           
           responseType: "json",
           headers: {
