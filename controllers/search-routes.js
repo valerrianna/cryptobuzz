@@ -1,7 +1,6 @@
 const axios = require("axios");
 const router = require("express").Router();
 const sequelize = require("../config/connection");
-const { Post, User, Comment } = require("../models");
 
 router.get("/:query", (req, res) => {
     console.log(req.session);
@@ -9,7 +8,7 @@ router.get("/:query", (req, res) => {
         axios({
           method: "get",
           // url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BTC,ETH&convert=CAD",
-          url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=100",
+          url: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=500",
           
           responseType: "json",
           headers: {
