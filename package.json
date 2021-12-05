@@ -22,7 +22,9 @@
     "request-promise": "^4.2.6",
     "sequelize": "^6.12.0-beta.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "npm-install-peers": "^1.2.2"
+  },
   "scripts": {
     "test": "jest",
     "start": "node server.js",
